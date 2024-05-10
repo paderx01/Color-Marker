@@ -10,7 +10,6 @@ h1 {
 
 .red {
   background: linear-gradient(
-    180deg,
     rgb(122, 74, 14),
     rgb(245, 62, 113),
     rgb(162, 27, 27)
@@ -18,14 +17,37 @@ h1 {
 }
 
 .green {
-  background: linear-gradient(180deg, #55680d, #71f53e, #116c31);
+  background: linear-gradient(#55680d, #71f53e, #116c31);
 }
 
 .blue {
-  background-color: hsl(240, 100%, 50%);
+  background: linear-gradient(
+    hsl(186, 76%, 16%),
+    hsl(223, 90%, 60%),
+    hsl(240, 56%, 42%)
+  );
 }
 
 .container {
   background-color: rgb(255, 255, 255);
   padding: 10px 0px;
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: black;
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.cap,
+.sleeve {
+  display: inline-block;
 }
